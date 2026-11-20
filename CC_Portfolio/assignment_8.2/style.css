@@ -1,0 +1,62 @@
+/*
+	this is a comment
+	rule syntax:
+	selector{
+		property: value;
+	}
+*/
+
+
+/* wildcard selector = will apply to everything */
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: royalblue;
+	width: 100vw;
+	height: 100vh;
+
+	margin: 0;
+	overflow-x: clip;
+}
+
+body > *{
+	width: 100%;
+}
+
+/* selevtor = p*/
+p{
+	font-size: 72px;
+}
+
+/* selecor = .blue */
+.blue{
+	color: white;
+	background-color: navy;
+
+	width: 50%;
+}
+
+/* targets a specific element + classname */
+h1.blue{
+	background-color: skyblue;
+}
+
+.purple{
+	background-color: rebeccapurple;
+}
+
+.big{
+	font-size: 24px;
+}
+
+.big.purple{
+	font-size: 48px;
+	background-color: plum;
+}
+
+#important{
+	font-family: monospace;
+	font-size: small;
+}
